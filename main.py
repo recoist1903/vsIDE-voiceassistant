@@ -57,7 +57,7 @@ def response(voice):
         exit()    
 
     if "saat kaç" in voice:
-        speak(datetime.now().strftime("%H:%M:&S"))
+        speak(datetime.now().strftime("%H:%M:"))
 
 
 def speak(string):
