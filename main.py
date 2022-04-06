@@ -45,6 +45,9 @@ def response(voice):
     if "hata ayıklamayı durdur" in voice:
      pyautogui.hotkey('shift','F5')
 
+    if "hata ayıklamayı bitir" in voice:
+     pyautogui.hotkey('shift','F5')
+
     if "çık" in voice:
         speak("çıkış yapıldı")
         exit()
