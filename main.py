@@ -1,11 +1,13 @@
 import speech_recognition as sr
 from datetime import date, datetime
+import webbrowser
 import time
 from gtts import gTTS
 from playsound import playsound
 import random
 import os
 import pyautogui
+import smtplib
 r = sr.Recognizer()
 
 pyautogui.alert(text='Herhangi bir komut kullandığınızda visual studio ekranda olmazsa çalışmayabilir.', title='https://github.com/recoist1903', button="Tamam");
@@ -29,6 +31,9 @@ def response(voice):
         pyautogui.hotkey('alt','F4')
 
     if "hata ayıklamayı çalıştır" in voice:
+        pyautogui.hotkey('F5')
+    
+    if "hata ayıklamayı başlat" in voice:
         pyautogui.hotkey('F5')
 
     if "çalıştır" in voice:
