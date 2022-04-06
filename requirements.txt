@@ -1,0 +1,7 @@
+requirements 
+
+pyautogui
+gtts
+speechrecognition 
+playsound 
+pyaudio
